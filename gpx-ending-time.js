@@ -1,7 +1,8 @@
 const xml2js = require('xml2js');
 const fs = require('fs');
 const { time } = require('console');
-const { default: test } = require('node:test');
+//not sure what tha hell this is
+//const { default: test } = require('node:test');
 const parser = new xml2js.Parser({ attrkey: "$" });
 
 // importing gpx and saving as object
@@ -14,7 +15,6 @@ parser.parseString(xml_string, function (error, result) {
     }
 });
 
-this is a test
 
 //remove time key in object 
 for (var x in gpxFile.gpx.trk) {
