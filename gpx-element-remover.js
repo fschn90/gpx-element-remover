@@ -44,3 +44,5 @@ function remover(element, input, output = "output.gpx") {
     console.log(`The element '${element}' has been removed from the '${input}' file and been saved as '${output}' file`)
 
 }
+
+remover('time', '2022_RoadTripWithMaddySanLucarToMurcia.gpx')
